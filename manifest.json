@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "They",
+    "version": "1",
+    "description": "Replaces \"he or she\" and variations thereof with the gender neutral term \"they\".",
+    "icons": {
+        "64": "icons/64.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "run_at": "document_end",
+            "js": ["replace.js"]
+        }
+    ]
+}
